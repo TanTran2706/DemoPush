@@ -1,0 +1,14 @@
+@Version 1	
+	final long startTime = System.currentTimeMillis();	
+	int minutePo = 25;
+	int secondsPo = 00;
+	for (int i = 1; i <= minutePo; i++) {
+		secondsPo = 59;
+		for (int j = 0; j <= secondsPo; j++) {
+			TimeUnit.SECONDS.sleep(1);
+			System.out.println((minutePo-i) + " : " + (secondsPo - j));
+		}
+	}
+
+	final long endTime = System.currentTimeMillis();
+	System.out.println("Total execution time: " + (endTime - startTime));
